@@ -1,3 +1,5 @@
+namespace   db;
+
 entity Customer
 {
     key ID : Integer;
