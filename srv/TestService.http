@@ -1,0 +1,10 @@
+POST http://localhost:4004/mypath/odata/API_SALES_ORDER/OrderSet
+Content-Type: application/json
+
+{
+    "orderid":7000,"customername":"Alex","contactperson":"Alex contact","grossamount":1000,"currency":"EUR"
+}
+
+###
+
+GET http://localhost:4004/mypath/odata/API_SALES_ORDER/OrderSet

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:DataServices>
+        <Schema Namespace="MyService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="OrderSet" EntityType="MyService.OrderSet"/>
+            </EntityContainer>
+            <EntityType Name="OrderSet">
+                <Key>
+                    <PropertyRef Name="orderid"/>
+                </Key>
+                <Property Name="orderid" Type="Edm.Int32" Nullable="false"/>
+                <Property Name="customername" Type="Edm.String" MaxLength="200" Nullable="false"/>
+                <Property Name="contactperson" Type="Edm.String" MaxLength="200"/>
+                <Property Name="grossamount" Type="Edm.Decimal" Scale="2" Precision="10"/>
+                <Property Name="currency" Type="Edm.String" MaxLength="4"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

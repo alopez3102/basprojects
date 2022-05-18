@@ -1,0 +1,4 @@
+specVersion: "2.5"
+metadata:
+  name: alex.app.salesorderapp
+type: application
